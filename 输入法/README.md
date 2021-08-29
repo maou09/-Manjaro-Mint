@@ -28,6 +28,9 @@ export XMODIFIERS="@im=fcitx"
 8、安装完成！
 
 
+https://www.tqwba.com/x_d/jishu/222779.html
+
+
 
 二、搜狗输入法：
 
