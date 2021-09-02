@@ -34,6 +34,59 @@ https://www.cinnamon-look.org/browse/
 
 
 
+----------------------------------------------------------------------------------------------------------------------
+图文版
+https://iyuantiao.com/linux/v2ray-linux%E5%AE%A2%E6%88%B7%E7%AB%AFv2raya%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-%E6%94%AF%E6%8C%81vmess-vless-ss-ssr-trojan-pingtunnel.html
+-
+V2rayA-Linux-64
+
+v2rayA使用教程
+注：以下使用教程来自v2rayA官方Wiki，包含多种安装方式可选。
+
+从软件源安装
+
+debian/ubuntu
+请确保已正确安装 v2ray-core，我们提供了 Linux 下的一键安装脚本：
+
+运行下面的指令下载并安装 V2Ray。当 yum 或 apt-get 可用的情况下，此脚本会自动安装 unzip 和 daemon。这两个组件是安装 V2Ray 的必要组件。如果你使用的系统不支持 yum 或 apt-get，请自行安装 unzip 和 daemon
+
+# download script:
+curl -O https://cdn.jsdelivr.net/gh/mzz2017/v2rayA@master/install/go.sh
+# install v2ray-core from jsdelivr:
+sudo bash go.sh
+
+准备完毕后：
+
+# add public key:
+wget -qO – http://apt.v2raya.mzz.pub/key/public-key.asc | sudo apt-key add –
+
+# add V2RayA’s repository:
+sudo add-apt-repository ‘deb http://apt.v2raya.mzz.pub/ v2raya main’
+sudo apt-get update
+
+# install V2RayA:
+sudo apt-get install v2raya
+
+部署完毕后，访问该机器的2017端口即可使用，如http://localhost:2017。
+
+
+------
+manjaro
+
+archlinux/manjaro
+v2raya已发布于AUR中：
+
+git clone https://aur.archlinux.org/v2raya.git /tmp/v2raya
+cd /tmp/v2raya
+makepkg -si
+
+sudo pacman -S base-devel
+
+部署完毕后，访问该机器的2017端口即可使用，如http://localhost:2017。
+
+
+
+
 
 
 
