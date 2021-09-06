@@ -1,7 +1,16 @@
 
 科学上网   Qv2ray
+
 美化插件   cairo-dock
+:sudo add-apt-repository ppa:cairo-dock-team/ppa
+:sudo apt-get update
+:sudo apt-get dist-upgrade
+:sudo apt-get install cairo-dock cairo-dock-plug-ins
+
 浏览器     Google Chrome
+:curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+:sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 游戏       steam 
 
 
@@ -71,26 +80,16 @@ sudo apt-get update
 # install V2RayA:
 sudo apt-get install v2raya
 
-部署完毕后，访问该机器的2017端口即可使用，如http://localhost:2017。
+# 启动 v2raya
+systemctl start v2raya
 
-
-------
-manjaro
-
-archlinux/manjaro
-v2raya已发布于AUR中：
-
-git clone https://aur.archlinux.org/v2raya.git /tmp/v2raya
-cd /tmp/v2raya
-makepkg -si
-
-sudo pacman -S base-devel
+# 开机自启 v2raya
+systemctl enable v2raya
 
 部署完毕后，访问该机器的2017端口即可使用，如http://localhost:2017。
 
 
-
-__________
+__________------------------------------------------------
 装谷歌浏览器
 以下是在Linux Mint上安装Google Chrome的步骤。
 
