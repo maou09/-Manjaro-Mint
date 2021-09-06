@@ -88,8 +88,60 @@ sudo pacman -S base-devel
 
 
 
+__________
+装谷歌浏览器
+以下是在Linux Mint上安装Google Chrome的步骤。
+
+步骤1：下载Google Chrome的.deb软件包
+
+首先，通过使用以下 curl 命令下载适用于Linux Mint 19的Google Chrome浏览器的.deb软件包：
+
+curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+步骤2：安装Google Chrome
+
+要在Linux Mint中安装.deb软件包，您将需要具有sudo特权。要安装Google Chrome浏览器，请使用以下命令：
+
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+现在，它将提示您输入密码。输入系统密码，然后继续。
+
+步骤3：启动Google Chrome
+
+现在，随着Google Chrome浏览器的安装完成。您可以通过两种方式启动谷歌浏览器。
+
+首先，您可以输入以下内容来启动Google Chrome浏览器 google-chrome 在终端中或使用活动并在Linux Mint中搜索google chrome。
+
+要使用活动启动Google Chrome，请单击“活动”并在出现图标后搜索Google Chrome，然后单击它以启动程序。
 
 
+如何在Ubuntu 18.04上安装Google Chrome-活动“ width =” 1366“ height =” 768“ srcset =” https://linux4one.com/wp-content/uploads/2019/02/How-to-Install-Google- Chrome-on-Ubuntu-18.04-Activities-.png 1366w，https://linux4one.com/wp-content/uploads/2019/02/How-to-Install-Google-Chrome-on-Ubuntu-18.04-Activities- -300x169.png 300w，https://linux4one.com/wp-content/uploads/2019/02/How-to-Install-Google-Chrome-on-Ubuntu-18.04-Activities--768x432.png 768w，https： //linux4one.com/wp-content/uploads/2019/02/How-to-Install-Google-Chrome-on-Ubuntu-18.04-Activities--1024x576.png 1024w“ data-lazy-sizes =”（max-宽度：1366px）100vw，1366px
+
+您也可以使用以下命令启动Google Chrome：
+
+google-chrome
+首次启动Google Chrome之后，系统会要求您将其设置为默认浏览器。
+
+
+如何在Ubuntu 18.04上安装Google Chrome-设置为默认浏览器“ width =” 573“ height =” 221“ srcset =” https://linux4one.com/wp-content/uploads/2019/02/How-to-install -Google-Chrome-on-Ubuntu-18.04-Set-as-default-browser.png 573w，https：//linux4one.com/wp-content/uploads/2019/02/How-to-install-Google-Chrome- on-Ubuntu-18.04-Set-as-default-browser-300x116.png 300w“ data-lazy-sizes =”（最大宽度：573px）100vw，573px
+
+您可以根据自己的喜好检查选项，然后单击 OK。单击确定后，您将看到以下屏幕。
+
+
+如何安装谷歌浏览器-开启同步“ width =” 1366“ height =” 741“ srcset =” https://linux4one.com/wp-content/uploads/2019/02/How-to-install-Google-Chrome -turn-on-sync.png 1366w，https://linux4one.com/wp-content/uploads/2019/02/How-to-install-Google-Chrome-turn-on-sync-300x163.png 300w，https ：//linux4one.com/wp-content/uploads/2019/02/How-to-install-Google-Chrome-turn-on-sync-768x417.png 768w，https：//linux4one.com/wp-content/ uploads / 2019/02 / How-to-install-Google-Chrome-turn-on-sync-1024x555.png 1024w“ data-lazy-sizes =”（最大宽度：1366px）100vw，1366px
+
+现在，谷歌浏览器已经打开，您可以浏览了。您还可以导入密码，书签和其他设置。
+
+
+如何安装谷歌浏览器-登录到谷歌浏览器“ width =” 591“ height =” 644“ srcset =” https://linux4one.com/wp-content/uploads/2019/02/How-to-install-Google -Chrome-Sign-in-to-google-Chrome.png 591w，https：//linux4one.com/wp-content/uploads/2019/02/How-to-install-Google-Chrome-Sign-in-to- google-Chrome-275x300.png 275w“ data-lazy-sizes =”（最大宽度：591px）100vw，591px
+
+卸载谷歌浏览器
+如果您要卸载Chrome，可以使用系统软件包管理器程序或使用终端来卸载。
+
+要卸载Google chrome，请使用以下命令：
+
+sudo apt-get purge google-chrome-stable
+现在输入以下命令删除配置目录：
+
+rm ~/.config/google-chrome/ -rf
 
 
 
